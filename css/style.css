@@ -17,6 +17,8 @@ header h1{font-family:'Lora',serif;font-size:1.05rem;font-weight:700;white-space
 .search-wrap input:focus{background:rgba(255,255,255,.25)}
 .search-icon{position:absolute;left:9px;top:50%;transform:translateY(-50%);opacity:.7;pointer-events:none}
 .count-badge{background:rgba(255,255,255,.15);border-radius:20px;padding:4px 12px;font-size:.8rem;white-space:nowrap}
+.gh-link{display:flex;align-items:center;opacity:.7;transition:opacity .15s}
+.gh-link:hover{opacity:1}
 
 /* ── Filter bar ─────────────────────────────────────── */
 .filter-bar{background:#24506e;padding:6px 14px;display:flex;gap:6px;align-items:center;flex-shrink:0;flex-wrap:wrap;position:relative;z-index:900}
@@ -86,6 +88,8 @@ input[type=range]{width:100%;accent-color:var(--accent);cursor:pointer;height:4p
 /* ── Layout ─────────────────────────────────────────── */
 .main{display:flex;flex:1;overflow:hidden}
 .sidebar{width:360px;flex-shrink:0;display:flex;flex-direction:column;background:var(--surface);border-right:1px solid var(--border);overflow:hidden}
+.list-header{display:flex;align-items:center;padding:6px 8px;border-bottom:1px solid var(--border);flex-shrink:0}
+.sort-select{font-size:.78rem;font-family:inherit;padding:4px 8px;border-radius:6px;border:1px solid var(--border);background:#fff;color:var(--text);cursor:pointer;outline:none}
 .list-scroll{flex:1;overflow-y:auto;padding:8px}
 .list-scroll::-webkit-scrollbar{width:4px}
 .list-scroll::-webkit-scrollbar-thumb{background:#ccc;border-radius:3px}

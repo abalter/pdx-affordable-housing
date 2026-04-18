@@ -16,6 +16,7 @@ const state = {
   maxRent: MAX_RENT_CEIL,
   ada:false, sober:false, vets:false,
   selected:null, view:'split',
+  sort:'name',
 };
 
 // ── Map (CartoDB — works from any origin, no API key) ─────
@@ -36,6 +37,7 @@ function makeMarker(p) {
   });
   m.bindPopup(popupHtml(p),{maxWidth:300});
   m.on('click',()=>selectProp(p.id));
+  m.on('dblclick',()=>zoomToProp(p.id));
   return m;
 }
 
@@ -116,10 +118,29 @@ function filtered() {
   });
 }
 
+// ── Sorting ───────────────────────────────────────────────
+function lowestRent(p) {
+  for (const v of [p.rentStudio, p.rent1br, p.rent2br, p.rent3br]) {
+    if (!v) continue;
+    const nums = (v.match(/\d+/g) || []).map(Number).filter(n => n > 300 && n < 3000);
+    if (nums.length) return Math.min(...nums);
+  }
+  return Infinity; // "Call" or missing goes to bottom
+}
+
+function sortProps(arr) {
+  const s = state.sort;
+  if (s === 'name') return arr.sort((a, b) => a.name.localeCompare(b.name));
+  if (s === 'rent-asc') return arr.sort((a, b) => lowestRent(a) - lowestRent(b));
+  if (s === 'region') return arr.sort((a, b) => (a.region || '').localeCompare(b.region || '') || a.name.localeCompare(b.name));
+  if (s === 'program') return arr.sort((a, b) => a.program.localeCompare(b.program) || a.name.localeCompare(b.name));
+  return arr;
+}
+
 // ── Render ────────────────────────────────────────────────
 function renderList() {
   const list=document.getElementById('list');
-  const fp=filtered();
+  const fp=sortProps(filtered());
   document.getElementById('count').textContent=fp.length;
   if (!fp.length) {
     list.innerHTML='<div class="empty-state"><div class="icon">🏠</div><p>No properties match your filters.</p></div>';
@@ -191,13 +212,23 @@ function selectProp(id) {
   state.selected=id; renderList();
   const p=PROPS[id];
   if (p.lat&&p.lon&&state.view!=='list') {
+    const m=markers[id]; if(m)m.openPopup();
+  }
+  const card=document.querySelector(`.card[data-id="${id}"]`);
+  if(card)card.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function zoomToProp(id) {
+  state.selected=id; renderList();
+  const p=PROPS[id];
+  if (p.lat&&p.lon&&state.view!=='list') {
     map.flyTo([p.lat,p.lon],16,{duration:0.8});
     const m=markers[id]; if(m)setTimeout(()=>m.openPopup(),900);
   }
   const card=document.querySelector(`.card[data-id="${id}"]`);
   if(card)card.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
-window.flyTo=function(id,e){e.stopPropagation();selectProp(id);};
+window.flyTo=function(id,e){e.stopPropagation();zoomToProp(id);};
 
 function setView(v) {
   state.view=v;
@@ -287,6 +318,7 @@ document.querySelectorAll('#prog-pills .pill-opt').forEach(pill => {
 
 // Other filter inputs
 document.getElementById('search').addEventListener('input', e => { state.search = e.target.value.trim(); render(); });
+document.getElementById('sort-by').addEventListener('change', e => { state.sort = e.target.value; render(); });
 document.getElementById('f-age').addEventListener('change', e => { state.age = e.target.value; render(); updateFilterBtnLabels(); });
 document.getElementById('f-ada').addEventListener('change', e => { state.ada = e.target.checked; render(); updateFilterBtnLabels(); });
 document.getElementById('f-sober').addEventListener('change', e => { state.sober = e.target.checked; render(); updateFilterBtnLabels(); });
