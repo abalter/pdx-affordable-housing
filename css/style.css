@@ -17,8 +17,10 @@ header h1{font-family:'Lora',serif;font-size:1.05rem;font-weight:700;white-space
 .search-wrap input:focus{background:rgba(255,255,255,.25)}
 .search-icon{position:absolute;left:9px;top:50%;transform:translateY(-50%);opacity:.7;pointer-events:none}
 .count-badge{background:rgba(255,255,255,.15);border-radius:20px;padding:4px 12px;font-size:.8rem;white-space:nowrap}
-.gh-link{display:flex;align-items:center;opacity:.7;transition:opacity .15s}
+.gh-link{display:flex;align-items:center;opacity:.7;transition:opacity .15s;margin-left:auto}
 .gh-link:hover{opacity:1}
+.about-link{color:rgba(255,255,255,.7);font-size:.8rem;text-decoration:none;font-weight:500;transition:color .15s;white-space:nowrap}
+.about-link:hover{color:#fff}
 
 /* ── Filter bar ─────────────────────────────────────── */
 .filter-bar{background:#24506e;padding:6px 14px;display:flex;gap:6px;align-items:center;flex-shrink:0;flex-wrap:wrap;position:relative;z-index:900}
@@ -84,6 +86,21 @@ input[type=range]{width:100%;accent-color:var(--accent);cursor:pointer;height:4p
 /* overlay to close dropdowns */
 .fb-overlay{display:none;position:fixed;inset:0;z-index:899}
 .fb-overlay.show{display:block}
+
+/* price note banner */
+.price-note{background:#fef3c7;color:#92400e;font-size:.78rem;padding:5px 14px;flex-shrink:0;border-bottom:1px solid #fcd34d}
+
+/* income inputs in price panel */
+.income-wrap{display:flex;flex-direction:column;gap:8px;margin-bottom:4px}
+.income-row{display:flex;align-items:center;gap:8px}
+.income-label{font-size:.8rem;font-weight:500;min-width:85px}
+.income-input-wrap{display:flex;align-items:center;border:1px solid var(--border);border-radius:6px;padding:0 8px;background:#fff}
+.income-dollar{font-size:.85rem;color:var(--muted);font-weight:600}
+.income-input{border:none;outline:none;font-size:.85rem;font-family:inherit;width:90px;padding:6px 4px;background:transparent}
+.income-freq{display:flex;gap:6px}
+.freq-opt{font-size:.78rem;display:flex;align-items:center;gap:3px;cursor:pointer;color:var(--text)}
+.freq-opt input{accent-color:var(--accent);cursor:pointer}
+.est-rent{font-size:.82rem;color:var(--accent);font-weight:600;min-height:1.2em}
 
 /* ── Layout ─────────────────────────────────────────── */
 .main{display:flex;flex:1;overflow:hidden}

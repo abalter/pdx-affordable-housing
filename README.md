@@ -1,6 +1,6 @@
 # PDX Affordable Housing
 
-An interactive map and searchable directory of affordable housing properties in Multnomah County, Oregon — maintained by [Northwest Pilot Project](https://nwpilotproject.org/).
+An interactive map and searchable directory of affordable housing properties in Multnomah County, Oregon.
 
 ## What It Does
 
@@ -41,14 +41,20 @@ project_history/    Project summary and notes
 
 ## History
 
-This project started when a case manager at NWPP needed a better way to search their printed housing lists. Using Claude AI, the original PDF directories were parsed into structured data, geocoded, and turned into this interactive web app. Python scrapers were later added to pull in listings from AffordableHousing.com and AffordableHousingOnline.com for a more complete picture.
+This project started when I was helping a disabled elder friend search for affordable housing. [Northwest Pilot Project](https://nwpilotproject.org/) publishes PDF directories of housing properties — useful, but hard to search and filter. I used Claude AI to parse those PDFs into structured data, geocoded everything, and turned it into this interactive web app. Python scrapers were later added to pull in listings from AffordableHousing.com and AffordableHousingOnline.com for a more complete picture.
+
+*This is an independent project with no affiliation to NWPP or any housing organization.*
 
 ## Goals
 
 - Keep property data current
 - Add waitlist status and availability where possible
 - Improve coverage beyond Multnomah County
-- Make the tool useful for case managers and housing seekers alike
+- Make the tool useful for anyone searching for affordable housing
+
+## Feedback & Contact
+
+Found a bug, have a suggestion, or notice outdated info? [Open an issue](https://github.com/abalter/pdx-affordable-housing/issues) on GitHub. You can also reach me through my [GitHub profile](https://github.com/abalter).
 
 ## License
 

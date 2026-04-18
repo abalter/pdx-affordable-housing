@@ -17,7 +17,35 @@ const state = {
   ada:false, sober:false, vets:false,
   selected:null, view:'split',
   sort:'name',
+  income: 0, incomeFreq: 'monthly', familySize: 1,
 };
+
+// ── Income → estimated rent ───────────────────────────────
+function monthlyIncome() {
+  if (!state.income) return 0;
+  return state.incomeFreq === 'yearly' ? state.income / 12 : state.income;
+}
+function estimatedRent() {
+  const mi = monthlyIncome();
+  return mi > 0 ? Math.round(mi * 0.3) : 0;
+}
+// Parse dollar amounts like "$1,505" or "$506-$889" → array of numbers
+function parseDollars(s) {
+  if (!s) return [];
+  return (s.match(/\$[\d,]+/g) || []).map(m => parseInt(m.replace(/[$,]/g, ''), 10)).filter(n => n >= 100 && n < 10000);
+}
+function effectiveRent(p) {
+  // For HUD/PBV: use estimated rent if income is entered, otherwise Infinity (unknown)
+  if (p.program === 'HUD' || p.program === 'PBV') {
+    return estimatedRent() || Infinity;
+  }
+  // For Tax Credit: use actual rent data
+  for (const v of [p.rentStudio, p.rent1br, p.rent2br, p.rent3br]) {
+    const nums = parseDollars(v);
+    if (nums.length) return Math.min(...nums);
+  }
+  return p.minRent || Infinity;
+}
 
 // ── Map (CartoDB — works from any origin, no API key) ─────
 const map = L.map('map').setView([45.5231,-122.6765],12);
@@ -46,13 +74,18 @@ function popupHtml(p) {
   const mapsUrl=`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addr)}`;
   const svUrl=`https://www.google.com/maps?q=${encodeURIComponent(addr)}&layer=c`;
   const searchUrl=`https://www.google.com/search?q=${encodeURIComponent(p.name+' '+p.city+' affordable housing')}`;
+  const isIB = (p.program === 'HUD' || p.program === 'PBV');
+  const estR = estimatedRent();
+  const rentLine = isIB && estR > 0
+    ? `<div class="popup-row"><b>Est. Rent:</b> ~$${estR.toLocaleString()}/mo <span style="font-size:.7rem;color:#888">(30% of income)</span></div>`
+    : rentStr(p) ? `<div class="popup-row"><b>Rent:</b> ${rentStr(p)}</div>` : '';
   return `<div class="popup-name">${p.name}</div>
     <div class="popup-addr">${p.address}, ${p.city}</div>
     <div class="popup-row"><b>Program:</b> ${p.program}</div>
     ${p.phone?`<div class="popup-row"><b>Phone:</b> ${p.phone}</div>`:''}
     ${p.ageElig&&p.ageElig!=='None'?`<div class="popup-row"><b>Eligibility:</b> ${p.ageElig}</div>`:''}
     ${unitStr(p)?`<div class="popup-row"><b>Units:</b> ${unitStr(p)}</div>`:''}
-    ${rentStr(p)?`<div class="popup-row"><b>Rent:</b> ${rentStr(p)}</div>`:''}
+    ${rentLine}
     ${p.ada?`<div class="popup-row"><b>ADA:</b> ${p.ada} units</div>`:''}
     ${p.mgmt?`<div class="popup-row"><b>Mgmt:</b> ${p.mgmt}</div>`:''}
     <div class="popup-actions">
@@ -92,6 +125,49 @@ slider.addEventListener('input',()=>{
   render(); updateFilterBtnLabels();
 });
 
+// ── Income inputs ─────────────────────────────────────────
+const incomeInput = document.getElementById('f-income');
+const estRentEl = document.getElementById('est-rent');
+const priceNoteEl = document.getElementById('price-note');
+
+function parseIncomeVal(s) {
+  return parseInt(s.replace(/[^0-9]/g, ''), 10) || 0;
+}
+function formatIncomeVal(n) {
+  return n > 0 ? n.toLocaleString() : '';
+}
+function updateEstDisplay() {
+  const est = estimatedRent();
+  if (est > 0) {
+    estRentEl.textContent = `Est. rent: ~$${est.toLocaleString()}/mo (30% of gross income)`;
+    priceNoteEl.innerHTML = `ℹ️ <strong>HUD</strong> & <strong>PBV</strong> estimated rent: <strong>~$${est.toLocaleString()}/mo</strong> (30% of your income). <strong>Tax Credit</strong> rents are fixed amounts.`;
+  } else {
+    estRentEl.textContent = '';
+    priceNoteEl.innerHTML = 'ℹ️ Rent amounts shown are for <strong>Tax Credit</strong> properties only. Enter your income above to estimate <strong>HUD</strong> & <strong>PBV</strong> rents (≈30% of gross income).';
+  }
+}
+
+incomeInput.addEventListener('input', () => {
+  state.income = parseIncomeVal(incomeInput.value);
+  const pos = incomeInput.selectionStart;
+  const formatted = formatIncomeVal(state.income);
+  incomeInput.value = formatted;
+  // Try to preserve cursor position
+  const diff = formatted.length - (incomeInput.value.length || 0);
+  incomeInput.setSelectionRange(pos + diff, pos + diff);
+  updateEstDisplay(); render(); updateFilterBtnLabels();
+});
+document.querySelectorAll('input[name="income-freq"]').forEach(r => {
+  r.addEventListener('change', () => {
+    state.incomeFreq = r.value;
+    updateEstDisplay(); render(); updateFilterBtnLabels();
+  });
+});
+document.getElementById('f-famsize').addEventListener('change', e => {
+  state.familySize = parseInt(e.target.value);
+  render(); updateFilterBtnLabels();
+});
+
 // ── Filtering ─────────────────────────────────────────────
 function filtered() {
   return PROPS.filter(p=>{
@@ -110,7 +186,10 @@ function filtered() {
     if (state.units.size>0) {
       let ok=false; for (const u of state.units) if(p[u]){ok=true;break;} if(!ok) return false;
     }
-    if (state.maxRent<MAX_RENT_CEIL && p.minRent && p.minRent>state.maxRent) return false;
+    if (state.maxRent<MAX_RENT_CEIL) {
+      const er = effectiveRent(p);
+      if (er !== Infinity && er > state.maxRent) return false;
+    }
     if (state.ada&&!p.ada) return false;
     if (state.sober&&!p.sober) return false;
     if (state.vets&&!p.veterans) return false;
@@ -120,18 +199,14 @@ function filtered() {
 
 // ── Sorting ───────────────────────────────────────────────
 function lowestRent(p) {
-  for (const v of [p.rentStudio, p.rent1br, p.rent2br, p.rent3br]) {
-    if (!v) continue;
-    const nums = (v.match(/\d+/g) || []).map(Number).filter(n => n > 300 && n < 3000);
-    if (nums.length) return Math.min(...nums);
-  }
-  return Infinity; // "Call" or missing goes to bottom
+  return effectiveRent(p);
 }
 
 function sortProps(arr) {
   const s = state.sort;
   if (s === 'name') return arr.sort((a, b) => a.name.localeCompare(b.name));
   if (s === 'rent-asc') return arr.sort((a, b) => lowestRent(a) - lowestRent(b));
+  if (s === 'rent-desc') return arr.sort((a, b) => { const ra=lowestRent(a), rb=lowestRent(b); if(ra===Infinity&&rb===Infinity)return 0; if(ra===Infinity)return 1; if(rb===Infinity)return -1; return rb-ra; });
   if (s === 'region') return arr.sort((a, b) => (a.region || '').localeCompare(b.region || '') || a.name.localeCompare(b.name));
   if (s === 'program') return arr.sort((a, b) => a.program.localeCompare(b.program) || a.name.localeCompare(b.name));
   return arr;
@@ -164,16 +239,25 @@ function renderList() {
     if (p.veterans) tags+=`<span class="tag">Veterans pref.</span>`;
     if (p.mixed)    tags+=`<span class="tag">Mixed subsidy</span>`;
     const rentLimit=state.maxRent<MAX_RENT_CEIL?state.maxRent:null;
+    const estR = estimatedRent();
+    const isIncomeBased = (p.program === 'HUD' || p.program === 'PBV');
     let chips='';
     const seen=new Set();
     for (const [key,rentVal,label] of [['sro',p.rentStudio,'SRO'],['studio',p.rentStudio,'Studio'],['br1',p.rent1br,'1BR'],['br2',p.rent2br,'2BR'],['br3',p.rent3br,'3BR']]) {
       if (!p[key]||seen.has(label)) continue; seen.add(label);
       let note='', match=false;
-      if (rentVal&&rentVal.toLowerCase()!=='call') {
-        const nums=(rentVal.match(/\d+/g)||[]).map(Number).filter(n=>n>300&&n<3000);
+      if (isIncomeBased && estR > 0) {
+        note = ` · ~$${estR.toLocaleString()}`;
+        if (rentLimit && estR <= rentLimit) match = true;
+      } else if (rentVal&&rentVal.toLowerCase()!=='call') {
+        const nums=parseDollars(rentVal);
         if (nums.length) { const lo=Math.min(...nums); note=` · $${lo.toLocaleString()}+`; if(rentLimit&&lo<=rentLimit)match=true; }
       }
       chips+=`<span class="${match?'uchip rent-match':'uchip'}">${label}${note}</span>`;
+    }
+    // If HUD/PBV has no unit chips but we have an estimate, show it standalone
+    if (isIncomeBased && estR > 0 && !chips) {
+      chips = `<span class="uchip rent-match">Est. ~$${estR.toLocaleString()}/mo</span>`;
     }
     el.innerHTML=`
       <div class="card-top">
@@ -222,7 +306,7 @@ function zoomToProp(id) {
   state.selected=id; renderList();
   const p=PROPS[id];
   if (p.lat&&p.lon&&state.view!=='list') {
-    map.flyTo([p.lat,p.lon],16,{duration:0.8});
+    map.flyTo([p.lat,p.lon],18,{duration:0.8});
     const m=markers[id]; if(m)setTimeout(()=>m.openPopup(),900);
   }
   const card=document.querySelector(`.card[data-id="${id}"]`);
@@ -276,7 +360,7 @@ document.querySelectorAll('.fb-apply').forEach(btn => btn.addEventListener('clic
 document.querySelectorAll('.fb-clear').forEach(btn => {
   btn.addEventListener('click', () => {
     const which = btn.dataset.clear;
-    if (which === 'price') { slider.value = MAX_RENT_CEIL; state.maxRent = MAX_RENT_CEIL; rentDisp.textContent = 'No limit'; }
+    if (which === 'price') { slider.value = MAX_RENT_CEIL; state.maxRent = MAX_RENT_CEIL; rentDisp.textContent = 'No limit'; state.income = 0; state.incomeFreq = 'monthly'; state.familySize = 1; incomeInput.value = ''; document.querySelector('input[name="income-freq"][value="monthly"]').checked = true; document.getElementById('f-famsize').value = '1'; updateEstDisplay(); }
     if (which === 'beds') { state.units.clear(); document.querySelectorAll('#bed-pills .pill-opt').forEach(p => { p.classList.toggle('active', p.dataset.bed === ''); }); }
     if (which === 'program') { state.activePrograms = new Set(['HUD','PBV','Tax Credit']); document.querySelectorAll('#prog-pills .pill-opt').forEach(p => p.classList.add('active')); }
     if (which === 'region') { state.activeRegions.clear(); document.querySelectorAll('.rchip').forEach(c => c.classList.remove('active')); }
@@ -333,8 +417,13 @@ document.getElementById('btn-map').addEventListener('click', () => setView('map'
 function updateFilterBtnLabels() {
   // Price button
   const priceBtn = document.getElementById('btn-price');
-  if (state.maxRent < MAX_RENT_CEIL) {
-    priceBtn.innerHTML = `💲 ≤$${state.maxRent.toLocaleString()} <span class="arrow">▼</span>`;
+  const hasRentFilter = state.maxRent < MAX_RENT_CEIL;
+  const hasIncome = state.income > 0;
+  if (hasRentFilter || hasIncome) {
+    let label = '💲';
+    if (hasIncome) label += ` ~$${estimatedRent().toLocaleString()}`;
+    if (hasRentFilter) label += ` ≤$${state.maxRent.toLocaleString()}`;
+    priceBtn.innerHTML = `${label} <span class="arrow">▼</span>`;
     priceBtn.classList.add('has-value');
   } else {
     priceBtn.innerHTML = '💲 Price <span class="arrow">▼</span>';
@@ -387,6 +476,7 @@ function updateFilterBtnLabels() {
   // Active filter tags
   const tagsEl = document.getElementById('active-filters');
   let tags = '';
+  if (state.income > 0) tags += afTag('Income: ~$' + estimatedRent().toLocaleString() + '/mo', 'income');
   if (state.maxRent < MAX_RENT_CEIL) tags += afTag('≤$' + state.maxRent.toLocaleString(), 'price');
   for (const u of state.units) { const l = { sro:'SRO', studio:'Studio', br1:'1BR', br2:'2BR', br3:'3BR' }; tags += afTag(l[u], 'bed-' + u); }
   if (state.activePrograms.size < 3) for (const pg of state.activePrograms) tags += afTag(pg, 'prog-' + pg);
@@ -401,7 +491,8 @@ function updateFilterBtnLabels() {
   tagsEl.querySelectorAll('button[data-remove]').forEach(btn => {
     btn.addEventListener('click', () => {
       const key = btn.dataset.remove;
-      if (key === 'price') { slider.value = MAX_RENT_CEIL; state.maxRent = MAX_RENT_CEIL; rentDisp.textContent = 'No limit'; }
+      if (key === 'price') { slider.value = MAX_RENT_CEIL; state.maxRent = MAX_RENT_CEIL; rentDisp.textContent = 'No limit'; state.income = 0; state.incomeFreq = 'monthly'; state.familySize = 1; incomeInput.value = ''; document.querySelector('input[name="income-freq"][value="monthly"]').checked = true; document.getElementById('f-famsize').value = '1'; updateEstDisplay(); }
+      else if (key === 'income') { state.income = 0; incomeInput.value = ''; updateEstDisplay(); }
       else if (key.startsWith('bed-')) { const u = key.slice(4); state.units.delete(u); document.querySelector(`#bed-pills .pill-opt[data-bed="${u}"]`).classList.remove('active'); if (state.units.size === 0) document.querySelector('#bed-pills .pill-opt[data-bed=""]').classList.add('active'); }
       else if (key.startsWith('prog-')) { const pg = key.slice(5); state.activePrograms.delete(pg); document.querySelector(`#prog-pills .pill-opt[data-prog="${pg}"]`).classList.remove('active'); }
       else if (key.startsWith('reg-')) { const r = key.slice(4); state.activeRegions.delete(r); document.querySelector(`.rchip[data-region="${r}"]`).classList.remove('active'); }

@@ -13,7 +13,7 @@
 <body>
 <header>
   <div>
-    <div class="subtitle">Northwest Pilot Project · Updated 3/2026</div>
+    <div class="subtitle">Multnomah County, Oregon · Updated 3/2026</div>
     <h1>PDX Affordable Housing</h1>
   </div>
   <div class="search-wrap">
@@ -23,6 +23,7 @@
     <input type="text" id="search" placeholder="Search name, address, neighborhood…">
   </div>
   <div class="count-badge"><span id="count">0</span> properties</div>
+  <a href="https://github.com/abalter/pdx-affordable-housing/blob/main/README.md" target="_blank" rel="noopener" class="about-link">About</a>
   <a href="https://github.com/abalter/pdx-affordable-housing" target="_blank" rel="noopener" class="gh-link" title="View on GitHub">
     <svg width="20" height="20" viewBox="0 0 16 16" fill="white"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
   </a>
@@ -35,7 +36,36 @@
   <!-- Price -->
   <div class="fb" data-filter="price">
     <button class="fb-btn" id="btn-price">💲 Price <span class="arrow">▼</span></button>
-    <div class="fb-panel" style="min-width:300px">
+    <div class="fb-panel" style="min-width:320px">
+      <h4>Your Household</h4>
+      <div class="income-wrap">
+        <div class="income-row">
+          <label for="f-income" class="income-label">Gross Income</label>
+          <div class="income-input-wrap">
+            <span class="income-dollar">$</span>
+            <input type="text" id="f-income" class="income-input" placeholder="0" autocomplete="off">
+          </div>
+          <div class="income-freq">
+            <label class="freq-opt"><input type="radio" name="income-freq" value="monthly" checked> /mo</label>
+            <label class="freq-opt"><input type="radio" name="income-freq" value="yearly"> /yr</label>
+          </div>
+        </div>
+        <div class="income-row">
+          <label for="f-famsize" class="income-label">Family Size</label>
+          <select id="f-famsize" class="panel-select" style="width:auto;min-width:60px">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8+</option>
+          </select>
+        </div>
+        <div id="est-rent" class="est-rent"></div>
+      </div>
+      <hr style="border:none;border-top:1px solid var(--border);margin:12px 0 10px">
       <h4>Max Rent</h4>
       <div class="rent-wrap">
         <div class="rent-header">
@@ -137,12 +167,15 @@
   </div>
 </div>
 
+<div class="price-note" id="price-note">ℹ️ Rent amounts shown are for <strong>Tax Credit</strong> properties only. Enter your income above to estimate <strong>HUD</strong> &amp; <strong>PBV</strong> rents (≈30% of gross income).</div>
+
 <div class="main">
   <div class="sidebar" id="sidebar">
     <div class="list-header">
       <select id="sort-by" class="sort-select">
         <option value="name">Sort: Name</option>
         <option value="rent-asc">Sort: Rent (low → high)</option>
+        <option value="rent-desc">Sort: Rent (high → low)</option>
         <option value="region">Sort: Region</option>
         <option value="program">Sort: Program</option>
       </select>
