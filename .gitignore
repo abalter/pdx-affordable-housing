@@ -1,1 +1,4 @@
-filtering_sample/
+data_collection/misc/filtering_sample/
+*:Zone.Identifier
+~$*.xlsx
+.DS_Store
