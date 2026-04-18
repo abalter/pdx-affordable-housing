@@ -1,6 +1,4 @@
-I had claude AI build this for me in a chat window. I gave it three PDF files (in this directory) with information on affordable housing options from three different sources. Claude compiled them into an excel file (also in this directory). Then I asked to build a web app around the data. I think Claude did a great job. However, the geomapping did not seem to work out properly. The pins are not in the right places on the map.
 
-Here is info from the chat:
 
 # PDX Affordable Housing — Project Summary
 

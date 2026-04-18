@@ -1,0 +1,2103 @@
+{
+  "/portland-or/traditions-at-hazelwood-893382/": {
+    "seo_url": "/portland-or/traditions-at-hazelwood-893382/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Jessica Kinson",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$1,122-$1,222",
+        "sqft": "",
+        "availability": ""
+      },
+      {
+        "model": "One Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,289",
+        "sqft": "",
+        "availability": ""
+      },
+      {
+        "model": "2 bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,543",
+        "sqft": "",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$35",
+      "security_deposit": "$400-$600",
+      "pet_deposit": null,
+      "pet_fee": "$300",
+      "monthly_estimate": "$1,222-$1,543",
+      "movein_estimate": "$735-$935"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "Yes Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Experience a higher quality lifestyle in a 55+ community centered around active adults expecting more out of life. As a marquee destination for active senior living in Portland, OR, Traditions at Hazelwood welcomes you with affordable pricing, thoughtfully curated amenities, and spacious floor plans, all blended with stellar services."
+  },
+  "/portland-or/5800-ne-center-commons-way-443203/": {
+    "seo_url": "/portland-or/5800-ne-center-commons-way-443203/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Center Commons",
+    "units": [],
+    "fees": {
+      "application": "$48",
+      "security_deposit": "$500",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,199",
+      "movein_estimate": "$548"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)",
+      "Heating (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Hot Water (Natural Gas)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "Yes Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "The Commons Apartments is a 55+ community that offers a large community room, on-site washer and dryers, a secured building, two elevators, and is conveniently located close to shopping and public transportation."
+  },
+  "/portland-or/the-canopy-apartments-at-powell-912859/": {
+    "seo_url": "/portland-or/the-canopy-apartments-at-powell-912859/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Leasing Agent",
+    "units": [
+      {
+        "model": "1 Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,325",
+        "sqft": "",
+        "availability": ""
+      },
+      {
+        "model": "2 Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,576",
+        "sqft": "",
+        "availability": ""
+      },
+      {
+        "model": "3 Bedroom",
+        "beds": "3",
+        "baths": "2",
+        "rent": "$1,819",
+        "sqft": "",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$50",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,325-$1,819",
+      "movein_estimate": "$50"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (Central)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "The Canopy Apartments at Powell is a new affordable community in Portland, Oregon. This thoughtfully-designed community offers 1-, 2-, and 3-bedroom apartment homes. This green building has earned Platinum-level certification from Earth Advantage for features such as energy-efficient appliances and lighting, high-performance windows, and the installation of a solar-panel system. Professionally managed by Quantum Residential. You can contact us at (971) 470-5863 or by visiting our leasing office."
+  },
+  "/portland-or/the-heights-at-columbia-knoll-642938/": {
+    "seo_url": "/portland-or/the-heights-at-columbia-knoll-642938/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Lorin Jacobs",
+    "units": [
+      {
+        "model": "One Bedroom/ One Bath",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,295",
+        "sqft": "",
+        "availability": ""
+      },
+      {
+        "model": "Spacious Two Bedrooom",
+        "beds": "2",
+        "baths": "1.5",
+        "rent": "$1,550",
+        "sqft": "897",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$4,000",
+      "security_deposit": "$600-$700",
+      "pet_deposit": "$500",
+      "pet_fee": null,
+      "monthly_estimate": "$1,295-$1,550",
+      "movein_estimate": "$5,100-$5,200"
+    },
+    "utilities_tenant": [
+      "No need to worry about utilities, they're included in the rent!"
+    ],
+    "utilities_owner": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "Yes Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "The Heights of Columbia Knoll is a community offering many amenities such as a fitness center, hair and nail salon, movie theater, and more.  You will find an active, carefree, and sustainable lifestyle in a community of friends is well within your reach.  Available now are spacious 1- and 2-bedroom apartment homes. Call today to tour our community. We have several floorplans available; come now to select the one that fits how you want to live. ASK ABOUT OUR MANAGERS SPECIAL ON SELECT APARTMENTS"
+  },
+  "/portland-or/st.-james-apartments--796770/": {
+    "seo_url": "/portland-or/st.-james-apartments--796770/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Codi Kramer",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$899",
+        "sqft": "363",
+        "availability": ""
+      },
+      {
+        "model": "1 Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,079",
+        "sqft": "559",
+        "availability": ""
+      },
+      {
+        "model": "2 Bedroom 1 Bath",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,255",
+        "sqft": "823",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$45",
+      "security_deposit": "$899-$1,255",
+      "pet_deposit": "$300",
+      "pet_fee": null,
+      "monthly_estimate": "$899-$1,255",
+      "movein_estimate": "$1,244-$1,600"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Great Location located in the Park Blocks with Safeway right across the street, easy access to public transportation.  Secured building with a parking garage (additional fee for parking)."
+  },
+  "/portland-or/rose-schnitzer-tower-apartments-760592/": {
+    "seo_url": "/portland-or/rose-schnitzer-tower-apartments-760592/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.roseschnitzertowerpdx.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,500",
+        "sqft": "599",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$50",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": "$300",
+      "monthly_estimate": "$1,500",
+      "movein_estimate": "$350"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "Yes Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.roseschnitzertowerpdx.com. Equal housing opportunity. The Rose Schnitzer Tower offers senior, affordable one-bedroom apartment homes in downtown Portland, OR. Our community enjoys a community room, laundry facilities, and resident services. With restaurants, entertainment, transportation, and more steps outside of your home, The Rose Schnitzer Tower is a great place to call home."
+  },
+  "/portland-or/park-tower-apartments-760587/": {
+    "seo_url": "/portland-or/park-tower-apartments-760587/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.parktowerportland.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$1,500",
+        "sqft": "305",
+        "availability": ""
+      },
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,800",
+        "sqft": "376",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$50",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": "$300",
+      "monthly_estimate": "$1,500-$1,800",
+      "movein_estimate": "$350"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "Yes Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.parktowerportland.com. Equal housing opportunity. Park Tower Apartments offers senior, affordable studio  1-bedroom apartment homes in downtown Portland, OR. Our community enjoys a community room, laundry facilities, and resident services. With restaurants, entertainment, transportation,  more steps outside of your home, Park Tower Apartments is a great place to call home."
+  },
+  "/portland-or/1200-building-760563/": {
+    "seo_url": "/portland-or/1200-building-760563/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.1200building.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,630",
+        "sqft": "575",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$50",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": "$300",
+      "monthly_estimate": "$1,630",
+      "movein_estimate": "$350"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "Yes Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.1200building.com. Equal housing opportunity. The 1200 Building offers senior, affordable one-bedroom apartment homes in downtown Portland, OR. Our community enjoys a community room, laundry facilities, and resident services. With restaurants, entertainment, transportation, and more steps outside of your home, The 1200 Building is a great place to call home."
+  },
+  "/portland-or/lexington-apartments-760578/": {
+    "seo_url": "/portland-or/lexington-apartments-760578/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.lexingtonportland.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$1,327",
+        "sqft": "",
+        "availability": ""
+      },
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,715",
+        "sqft": "",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$50",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": "$300",
+      "monthly_estimate": "$1,327-$1,715",
+      "movein_estimate": "$350"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "Yes Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.lexingtonportland.com. Equal housing opportunity. The Lexington Apartments offers senior, affordable studio  1-bedroom apartment homes in downtown Portland, OR. Our community enjoys a community room, laundry facilities,  resident services. With restaurants, entertainment, transportation, and more steps outside of your home, The Lexington Apartments is a great place to call home."
+  },
+  "/portland-or/caritas-plaza-713352/": {
+    "seo_url": "/portland-or/caritas-plaza-713352/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.caritasplaza.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$1,000",
+        "sqft": "",
+        "availability": ""
+      },
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,200",
+        "sqft": "",
+        "availability": ""
+      },
+      {
+        "model": "Two-Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,941",
+        "sqft": "",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$55",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": "$250",
+      "monthly_estimate": "$1,000-$1,941",
+      "movein_estimate": "$305"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "Yes Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.caritasplaza.com. Equal housing opportunity. Caritas Plaza features cozy studio, 1,  2-bedroom apartments for seniors 62+ or disabled tenants in Portland, OR. Our community enjoys a community room, on-site laundry facilities, and some included utilities. With entertainment, shopping, transportation, and freeway access nearby, Caritas Plaza is a great place to call home."
+  },
+  "/portland-or/caritas-villa-713347/": {
+    "seo_url": "/portland-or/caritas-villa-713347/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.caritasvilla.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$1,000",
+        "sqft": "384",
+        "availability": ""
+      },
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,283",
+        "sqft": "1,014",
+        "availability": ""
+      },
+      {
+        "model": "Two-Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,400",
+        "sqft": "793",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$55",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": "$250",
+      "monthly_estimate": "$1,000-$1,400",
+      "movein_estimate": "$305"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "Yes Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.caritasvilla.com. Equal housing opportunity. Caritas Villa features spacious studio, 1  2-bedroom apartments for seniors 62+ or disabled tenants in Portland, OR. Our community enjoys a community room, computer room, on-site laundry facilities, and some included utilities. With restaurants, shopping, and transportation nearby, Caritas Villa is a great place to call home."
+  },
+  "/portland-or/chiles-house-713329/": {
+    "seo_url": "/portland-or/chiles-house-713329/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.chileshouseportland.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$1,239",
+        "sqft": "305",
+        "availability": ""
+      },
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,327",
+        "sqft": "",
+        "availability": ""
+      },
+      {
+        "model": "Two-Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,593",
+        "sqft": "",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$55",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,239-$1,593",
+      "movein_estimate": "$55"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.chileshouseportland.com. Equal housing opportunity. Chiles House is an affordable community in SE Portland focusing on those facing houselessness. Our community enjoys a community room, laundry room, and storage area. With restaurants, entertainment, and transportation nearby, Chiles House is a great place to call home."
+  },
+  "/portland-or/esperanza-court-712898/": {
+    "seo_url": "/portland-or/esperanza-court-712898/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.esperanzacourt.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,171",
+        "sqft": "649",
+        "availability": ""
+      },
+      {
+        "model": "Two-Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,397",
+        "sqft": "940",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$55",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,171-$1,397",
+      "movein_estimate": "$55"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.esperanzacourt.com. Equal housing opportunity. Esperanza Court offers 1  2-bedroom affordable, spacious apartments and townhomes in Portland, OR. Our community enjoys a community room, playground, resident services, and some included utilities (water, sewer, garbage). With restaurants, entertainment, and transportation nearby, Esperanza Court is a great place to call home."
+  },
+  "/portland-or/howard-house-712893/": {
+    "seo_url": "/portland-or/howard-house-712893/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.howardhouseportland.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$986",
+        "sqft": "600",
+        "availability": ""
+      },
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,124",
+        "sqft": "600",
+        "availability": ""
+      },
+      {
+        "model": "Two-Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,153",
+        "sqft": "600",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$55",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$986-$1,153",
+      "movein_estimate": "$55"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.howardhouseportland.com. Equal housing opportunity. Howard House offers affordable studio, 1  2-bedroom apartment homes with spacious floor plans in Portland, OR. Our community enjoys off-street parking and some included utilities (water, sewer, garbage). With restaurants, entertainment, and transportation nearby, Howard House is a great place to call home."
+  },
+  "/portland-or/kateri-park-712890/": {
+    "seo_url": "/portland-or/kateri-park-712890/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.kateripark.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$507",
+        "sqft": "604",
+        "availability": ""
+      },
+      {
+        "model": "Two-Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$600",
+        "sqft": "787",
+        "availability": ""
+      },
+      {
+        "model": "Three-Bedroom",
+        "beds": "3",
+        "baths": "1.5",
+        "rent": "$1,143",
+        "sqft": "1,290",
+        "availability": ""
+      },
+      {
+        "model": "Four-Bedroom",
+        "beds": "4",
+        "baths": "1",
+        "rent": "$1,761",
+        "sqft": "1,436",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$55",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$507-$1,761",
+      "movein_estimate": "$55"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.kateripark.com. Equal housing opportunity. Kateri Park Apartments offers affordable 1, 2, 3  4-bedroom apartment and townhomes with spacious floor plans in Portland, OR. Our community enjoys a community room, playground, resident services, and some included utilities (water, sewer, garbage). Kateri Park is a great place to call home."
+  },
+  "/portland-or/mccoy-village-712887/": {
+    "seo_url": "/portland-or/mccoy-village-712887/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.mccoyvillage.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$950",
+        "sqft": "518",
+        "availability": ""
+      },
+      {
+        "model": "Two-Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,131",
+        "sqft": "900",
+        "availability": ""
+      },
+      {
+        "model": "Three-Bedroom",
+        "beds": "3",
+        "baths": "2",
+        "rent": "$1,450",
+        "sqft": "1,000",
+        "availability": ""
+      },
+      {
+        "model": "Four-Bedroom",
+        "beds": "4",
+        "baths": "2",
+        "rent": "$1,759",
+        "sqft": "1,300",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$55",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$950-$1,759",
+      "movein_estimate": "$55"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.mccoyvillage.com. Equal housing opportunity. McCoy Village Apartments offers affordable 1, 2, 3  4-bedroom apartment homes with spacious floor plans in Portland, OR. Our community enjoys a playground, community room, and assigned parking. With restaurants, shopping, and entertainment conveniently nearby, McCoy Village is a great place to call home."
+  },
+  "/portland-or/st.-francis-park-712842/": {
+    "seo_url": "/portland-or/st.-francis-park-712842/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.stfrancisparkapartments.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$994",
+        "sqft": "384",
+        "availability": ""
+      },
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,218",
+        "sqft": "586",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$55",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$994-$1,218",
+      "movein_estimate": "$55"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.stfrancisparkapartments.com. Equal housing opportunity. St. Francis Park offers affordable studio and 1-bedroom apartment homes with spacious floor plans in Portland, OR. Our community enjoys a greenhouse and garden areas, on-site laundry facilities, community room, and some included utilities (water, sewer, garbage)."
+  },
+  "/portland-or/tiller-terrace-710482/": {
+    "seo_url": "/portland-or/tiller-terrace-710482/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.tillerterrace.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$1,198",
+        "sqft": "229",
+        "availability": ""
+      },
+      {
+        "model": "One-Bedroom Loft",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,277",
+        "sqft": "452",
+        "availability": ""
+      },
+      {
+        "model": "One-Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,280",
+        "sqft": "505",
+        "availability": ""
+      },
+      {
+        "model": "Two-Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,530",
+        "sqft": "658",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$50",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,198-$1,530",
+      "movein_estimate": "$50"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.tillerterrace.com. Equal housing opportunity. Welcome to Tiller Terrace  a brand new housing community providing 214 affordable apartments for low-income households. Located in the in the Goose Hollow neighborhood, Tiller Terrace offers 214 apartment homes in a variety of floor plans, including studio, one-bedroom, and two-bedroom layouts, and lofts are available in select homes."
+  },
+  "/portland-or/rockwood-village-apartments-484772/": {
+    "seo_url": "/portland-or/rockwood-village-apartments-484772/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.rockwood-village.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "1x1",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,354",
+        "sqft": "608",
+        "availability": ""
+      },
+      {
+        "model": "2x1",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,624",
+        "sqft": "807",
+        "availability": ""
+      },
+      {
+        "model": "3x2",
+        "beds": "3",
+        "baths": "2",
+        "rent": "$1,876",
+        "sqft": "1,158",
+        "availability": ""
+      },
+      {
+        "model": "4x2",
+        "beds": "4",
+        "baths": "2",
+        "rent": "$2,090",
+        "sqft": "1,269",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$50",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": "$250",
+      "monthly_estimate": "$1,354-$2,090",
+      "movein_estimate": "$300"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.rockwood-village.com. Equal housing opportunity. Rockwood Village is your new affordable housing option in Gresham, OR offering 1, 2, 3, and 4-bedroom floor plans. Designed and built with you and community in mind, call us home! We have green spaces, sports fields, community garden space, indoor bike storage, and onsite laundry facilities. Enjoy being close to transit."
+  },
+  "/portland-or/alder-house-485885/": {
+    "seo_url": "/portland-or/alder-house-485885/",
+    "phone": "",
+    "email": null,
+    "website_url": "https://www.alderhouseapts.com",
+    "mgmt_company": "Guardian Marketing",
+    "units": [
+      {
+        "model": "SRO Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$1,015",
+        "sqft": "206",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$50",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,015",
+      "movein_estimate": "$50"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Income restrictions apply. Waitlist applications are on our website. Contact us or apply to the waitlist, go to: www.alderhouseapts.com. Equal housing opportunity. Alder House is an urban community in the heart of Portland offering Studio Apartments at affordable rates. Amenities include Laundry Facilities, Microwave, On-Site Maintenance, and more."
+  },
+  "/portland-or/7531-se-steele-st-997511/": {
+    "seo_url": "/portland-or/7531-se-steele-st-997511/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Bellrose Qresinc",
+    "units": [],
+    "fees": {
+      "application": "$55",
+      "security_deposit": null,
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,180",
+      "movein_estimate": "$55"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (Window)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": ""
+  },
+  "/portland-or/koz-on-killingsworth-996470/": {
+    "seo_url": "/portland-or/koz-on-killingsworth-996470/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Nancy Nelson",
+    "units": [
+      {
+        "model": "Studio 0x1",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$899",
+        "sqft": "245",
+        "availability": ""
+      },
+      {
+        "model": "Studio S3",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$899-$925",
+        "sqft": "245",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$45",
+      "security_deposit": "$300",
+      "pet_deposit": "$300",
+      "pet_fee": null,
+      "monthly_estimate": "$994-$1,020",
+      "movein_estimate": "$645"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)",
+      "Trash pickup"
+    ],
+    "utilities_owner": [
+      "Cooling (None)",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (1 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Koz on Killingsworth (now under new management) has studio units ranging from $899/mo. - $1,045/mo. We are offering leasing specials from 4 weeks up to 6 weeks free."
+  },
+  "/portland-or/the-sitka-851722/": {
+    "seo_url": "/portland-or/the-sitka-851722/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "The Sitka",
+    "units": [
+      {
+        "model": "SB Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$963",
+        "sqft": "384",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$36",
+      "security_deposit": "$300",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,078",
+      "movein_estimate": "$336"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (Window)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Natural Gas)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "The Sitka Apartments is an amazing community in the Heart of The Pearl District. Offering Studio, 1  2 bedroom units. We are walking distance to countless restaurants, boutiques, parks and the river. The streetcar stops right in front of the building and can take you to any other bus line you need. We are walking distance to other bus/max lines as well. Safeway is 2 blocks away. We offer an onsite 1-bedroom quest suite that can be rented by the night for when friends and family are in town."
+  },
+  "/portland-or/bethany-meadows-897991/": {
+    "seo_url": "/portland-or/bethany-meadows-897991/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Bethany Meadows",
+    "units": [
+      {
+        "model": "1 Bedroom 1 Bathroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,245",
+        "sqft": "575",
+        "availability": ""
+      },
+      {
+        "model": "2 Bedroom 2 Bathroom",
+        "beds": "2",
+        "baths": "2",
+        "rent": "$1,465",
+        "sqft": "850",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": null,
+      "security_deposit": "$0",
+      "pet_deposit": "$300",
+      "pet_fee": null,
+      "monthly_estimate": "$1,245-$1,465",
+      "movein_estimate": "$300"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Bethany Meadows offers quality and convenient living at an affordable price. Located in Washington County off Highway 26 near Bethany and Cornell roads, this 340-unit community has a mix of one- and two-bedroom units perfect for individuals or families. Community features include a swimming pool and spa, fitness center, in-unit laundry, and onsite management."
+  },
+  "/portland-or/the-fields-apartments-960223/": {
+    "seo_url": "/portland-or/the-fields-apartments-960223/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Kimberly Carpenter",
+    "units": [
+      {
+        "model": "One Bedroom One Bath",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,299",
+        "sqft": "636",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$21",
+      "security_deposit": "$500",
+      "pet_deposit": "$300",
+      "pet_fee": null,
+      "monthly_estimate": "$1,299",
+      "movein_estimate": "$821"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Kick back, relax and enjoy the good life at The Fields Apartments. Our affordable 1, 2, and 3 bedroom apartments in Tigard, Oregon, come in a variety of floor plans so you can choose your ideal living space. Our convenient location places you moments away from popular dining, shopping, and outdoor recreation. The home you\u2019ve been searching for is waiting for you at The Fields Apartments."
+  },
+  "/portland-or/waterleaf-apartments-956296/": {
+    "seo_url": "/portland-or/waterleaf-apartments-956296/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Waterleaf Apartments",
+    "units": [
+      {
+        "model": "Studio 60AMI",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$999",
+        "sqft": "571",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$25",
+      "security_deposit": "$0",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$999",
+      "movein_estimate": "$25"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)",
+      "Heating (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Hot Water (Natural Gas)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Waterleaf brings 178 affordable apartments to Portland's amenity-rich South Waterfront area. Consisting of studios, one, two, and three-bedroom apartments. The property is located directly next to the Portland Streetcar station and close to the MAX light rail. Unique to the immediate area are the new Tillikum Crossing, a pedestrian/public transit bridge providing access to the close-in east side, as well as convenient access to the Oregon Health and Sciences University (OHSU) Waterfront."
+  },
+  "/portland-or/park-avenue-apartments-934897/": {
+    "seo_url": "/portland-or/park-avenue-apartments-934897/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Community Manager",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$999",
+        "sqft": "279",
+        "availability": ""
+      },
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$1,249",
+        "sqft": "347",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$50",
+      "security_deposit": "$999-$1,249",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$999-$1,249",
+      "movein_estimate": "$1,049-$1,299"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Welcome to your new home in the heart of downtown Portland! This modern 11-story community offers thoughtfully designed studio apartment homes at an affordable price perfect for students, professionals, and anyone seeking vibrant city living without the high cost. Each studio features smart layouts, large windows, and contemporary finishes, creating a comfortable space that fits your lifestyle. Enjoy breathtaking views of the city skyline and easy access to everything Portland has to offer."
+  },
+  "/portland-or/carolyn-gardens-942597/": {
+    "seo_url": "/portland-or/carolyn-gardens-942597/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Jennifer Owens",
+    "units": [
+      {
+        "model": "Large 4-Bedroom Apartment",
+        "beds": "4",
+        "baths": "2",
+        "rent": "$101",
+        "sqft": "1,425",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$50",
+      "security_deposit": "$100",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$101",
+      "movein_estimate": "$150"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooling (None)",
+      "Heating (Electric)"
+    ],
+    "utilities_owner": [
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Hot Water (Electric)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Carolyn Gardens is a 12-unit property providing family-sized housing on SE Division Street, at the border of Hazelwood and Powellhurst-Gilburt. The project consists of four 3-bedroom and eight 4-bedroom units, all of which carry project-based Section 8 vouchers.  Residents will benefit from high-capacity, frequent bus service through TriMet\u2019s Division Transit Project connecting outer Southeast Portland with Downtown."
+  },
+  "/portland-or/king-parks-apartments-938451/": {
+    "seo_url": "/portland-or/king-parks-apartments-938451/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Community Manager",
+    "units": [
+      {
+        "model": "1 Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,509",
+        "sqft": "617",
+        "availability": ""
+      },
+      {
+        "model": "3 Bedroom",
+        "beds": "1",
+        "baths": "1.5",
+        "rent": "$1,466",
+        "sqft": "1,204",
+        "availability": ""
+      },
+      {
+        "model": "2 bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,270",
+        "sqft": "800",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$42",
+      "security_deposit": "$1,270-$1,509",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,270-$1,509",
+      "movein_estimate": "$1,312-$1,551"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (Central)",
+      "Heating (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Hot Water (Electric)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "King Park Apartments is an affordable housing community in Portland, OR that features 1, 2, and 3 bedroom apartment homes. King Park Apartments is an income restricted property. Residents must meet these income limits to qualify for affordable homes at King Park Apartments. King Park Apartments is conveniently located near many neighborhood amenities. The affordable housing pr"
+  },
+  "/portland-or/beatrice-morrow-apartments-938534/": {
+    "seo_url": "/portland-or/beatrice-morrow-apartments-938534/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Community Manager",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$619",
+        "sqft": "412",
+        "availability": ""
+      },
+      {
+        "model": "1 Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$663",
+        "sqft": "600",
+        "availability": ""
+      },
+      {
+        "model": "2 Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$796",
+        "sqft": "944",
+        "availability": ""
+      },
+      {
+        "model": "3 Bedroom",
+        "beds": "3",
+        "baths": "2",
+        "rent": "$920",
+        "sqft": "1,223",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$42",
+      "security_deposit": "$619-$920",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$619-$920",
+      "movein_estimate": "$661-$962"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (Central)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Beatrice Morrow is an affordable housing community in Portland, OR that features studio, 1, 2, and 3 bedroom apartment homes. Beatrice Morrow is an income restricted property. Residents must meet these income limits to qualify for affordable homes at Beatrice Morrow."
+  },
+  "/portland-or/barbara-maher-937662/": {
+    "seo_url": "/portland-or/barbara-maher-937662/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Community Manager",
+    "units": [
+      {
+        "model": "SRO",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$543",
+        "sqft": "200",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$0",
+      "security_deposit": "$543",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$543",
+      "movein_estimate": "$543"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (Central)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Welcome to Barbara Maher! Barbara Maher Apartments is a clean and sober affordable housing community specifically for women. Our community\u2019s supportive environment helps residents maintain their sobriety journey while providing stable and affordable housing. Barbara Maher offers 32 semi-furnished SRO homes. We accept Section 8 Housing Choice Vouchers and follow income eligibility guidelines to ensure affordability. Residents have access to our Resident Rewards Program."
+  },
+  "/portland-or/argyle-gardens-937642/": {
+    "seo_url": "/portland-or/argyle-gardens-937642/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Community Manager",
+    "units": [
+      {
+        "model": "Furnished SRO",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$506",
+        "sqft": "106",
+        "availability": ""
+      },
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$790",
+        "sqft": "212",
+        "availability": ""
+      },
+      {
+        "model": "1 Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,295",
+        "sqft": "429",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$0",
+      "security_deposit": "$506-$1,295",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$506-$1,295",
+      "movein_estimate": "$506-$1,295"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (Central)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Looking for a safe, stable, and affordable place to call home? Argyle Gardens could be the right fit for you. We offer furnished SRO units, studios and 1-bedroom apartment homes. We accept Section 8 Housing Choice Vouchers and follow income eligibility guidelines to ensure affordability. Residents have access to our Resident Rewards Program. Our application process is designed to be straightforward, and we\u2019re here to help every step of the way. Contact us for a tour today!"
+  },
+  "/portland-or/timberview-apartments-934925/": {
+    "seo_url": "/portland-or/timberview-apartments-934925/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Community Manager",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$1,274",
+        "sqft": "331",
+        "availability": ""
+      },
+      {
+        "model": "1 Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,363",
+        "sqft": "540",
+        "availability": ""
+      },
+      {
+        "model": "2 Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,636",
+        "sqft": "839",
+        "availability": ""
+      },
+      {
+        "model": "3 Bedroom",
+        "beds": "3",
+        "baths": "2",
+        "rent": "$1,891",
+        "sqft": "1,019",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$45",
+      "security_deposit": "$1,274-$1,891",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,274-$1,891",
+      "movein_estimate": "$1,319-$1,936"
+    },
+    "utilities_tenant": [
+      "Electric"
+    ],
+    "utilities_owner": [
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (Central)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Electric)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Welcome to Timberview Apartments, the FIRST Mass Timber Building of affordable housing! A newly constructed affordable housing community in Portland, OR with luxury amenities like RADIANT HEAT FLOORING, floor to ceiling windows, walk-in closets, and high-end timber accents throughout to name a few. Timberview Apartments is an income restricted property. Residents must meet these income limits of 1.5 times the monthly rent but not exceed the household income maximum to qualify for homes."
+  },
+  "/portland-or/the-abigail-933392/": {
+    "seo_url": "/portland-or/the-abigail-933392/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "The Abigail",
+    "units": [
+      {
+        "model": "3 bed 2 bath",
+        "beds": "3",
+        "baths": "2",
+        "rent": "$1,649",
+        "sqft": "1,070",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$36",
+      "security_deposit": "$500",
+      "pet_deposit": null,
+      "pet_fee": "$300",
+      "monthly_estimate": "$1,649",
+      "movein_estimate": "$836"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Heating (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Cooling (None)",
+      "Sewer (Public Sewer)",
+      "Hot Water (Natural Gas)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Beautiful community - Studios, 1-3 beds. On-site laundry on each floor, free Wi-Fi, a large community room, and a guest suite to rent."
+  },
+  "/portland-or/abigail-apartments--869508/": {
+    "seo_url": "/portland-or/abigail-apartments--869508/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "The Abigail",
+    "units": [
+      {
+        "model": "SC Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$1,171",
+        "sqft": "448",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$36",
+      "security_deposit": "$300",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,286",
+      "movein_estimate": "$336"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (Window)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Natural Gas)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Studio, 1, 2, and 3 Bedrooms, Energy Star Refrigerator and Range, Large Closets, Large Windows, High-Speed Internet Upgrade Optional, Free In-Unit Wi-Fi, Phone and Cable Ready, Patio/Balcony*, Ceiling Fan with Light in Bedroom, Quartz Countertops*, In Unit W/D*, Built-in Closet Shelving System, Painted Accent Wall in Living Room, Carpet in Bedrooms"
+  },
+  "/portland-or/the-sitka-851729/": {
+    "seo_url": "/portland-or/the-sitka-851729/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Nancy Nelson",
+    "units": [
+      {
+        "model": "SB Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$958",
+        "sqft": "379",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$36",
+      "security_deposit": "$300",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$1,073",
+      "movein_estimate": "$336"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Cooling (Window)",
+      "Sewer (Public Sewer)",
+      "Heating (Electric)",
+      "Hot Water (Natural Gas)"
+    ],
+    "utilities_owner": [
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (1 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "Studios available for immediate move in."
+  },
+  "/portland-or/712-sw-saint-clair-ave-173047/": {
+    "seo_url": "/portland-or/712-sw-saint-clair-ave-173047/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Lisa Simonson",
+    "units": [],
+    "fees": {
+      "application": "$0",
+      "security_deposit": "$1,327",
+      "pet_deposit": "$300",
+      "pet_fee": null,
+      "monthly_estimate": "$1,327",
+      "movein_estimate": "$1,627"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)",
+      "Heating (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Hot Water (Natural Gas)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (1 Max)",
+    "age_restriction": "Yes Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "This is the only apartment on the property that is allowed to use the Section 8 Voucher on.  Beautiful 1 bedroom, 1 bath available.  New carpet throughout.    Two balconies with a view.  This property is for persons 62+ and/or disabled."
+  },
+  "/portland-or/erickson-fritz-apartments-752841/": {
+    "seo_url": "/portland-or/erickson-fritz-apartments-752841/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Jennifer Owens",
+    "units": [
+      {
+        "model": "Charming Studio Apartment",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$699",
+        "sqft": "310",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$50",
+      "security_deposit": "$300",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$699",
+      "movein_estimate": "$350"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)",
+      "Heating (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Hot Water (Natural Gas)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "No Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "This charming studio apartment offers a comfortable and functional living space. As you enter, you'll appreciate the secure FOB entry system. The elevator allows for easy access to the second level, making moving in a breeze. The apartment is thoughtfully designed to be wheelchair accessible, ensuring that everyone can enjoy the space. The beautiful hardwood floors add a touch of elegance to the studio, creating a warm and inviting atmosphere. For your convenience, there is a coin-operated lau"
+  },
+  "/portland-or/737-sw-17th-ave-669053/": {
+    "seo_url": "/portland-or/737-sw-17th-ave-669053/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "Lindsey Pykonen",
+    "units": [],
+    "fees": {
+      "application": "$25",
+      "security_deposit": "$1,146",
+      "pet_deposit": "$200",
+      "pet_fee": null,
+      "monthly_estimate": "$1,146",
+      "movein_estimate": "$1,371"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooking Fuel (Electric)",
+      "Cooling (None)",
+      "Heating (Electric)",
+      "Hot Water (Electric)"
+    ],
+    "utilities_owner": [
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed (2 Max)",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": true,
+    "raw_description": "A beautiful affordable apartment community, Stadium Station offers a mix of studio, one and two-bedroom apartment homes in a secure, transit-oriented, architecturally designed building. We are located in the Goose Hollow area of Portland, close to downtown, NW 21st and NW 23rd, Washington Park and the Pearl District. We are right across the street from Providence Park!"
+  },
+  "/portland-or/vera-apartments-607425/": {
+    "seo_url": "/portland-or/vera-apartments-607425/",
+    "phone": "",
+    "email": null,
+    "website_url": null,
+    "mgmt_company": "The Vera",
+    "units": [
+      {
+        "model": "Studio",
+        "beds": "Studio",
+        "baths": "1",
+        "rent": "$950",
+        "sqft": "465",
+        "availability": ""
+      },
+      {
+        "model": "1 Bedroom",
+        "beds": "1",
+        "baths": "1",
+        "rent": "$1,030",
+        "sqft": "",
+        "availability": ""
+      },
+      {
+        "model": "2 Bedroom",
+        "beds": "2",
+        "baths": "1",
+        "rent": "$1,240",
+        "sqft": "",
+        "availability": ""
+      },
+      {
+        "model": "3 Bedroom",
+        "beds": "3",
+        "baths": "2",
+        "rent": "$1,420",
+        "sqft": "",
+        "availability": ""
+      }
+    ],
+    "fees": {
+      "application": "$36",
+      "security_deposit": "$300-$500",
+      "pet_deposit": null,
+      "pet_fee": null,
+      "monthly_estimate": "$950-$1,420",
+      "movein_estimate": "$336-$536"
+    },
+    "utilities_tenant": [
+      "Electric",
+      "Cooling (None)",
+      "Heating (Electric)"
+    ],
+    "utilities_owner": [
+      "Cooking Fuel (Electric)",
+      "Water (City Water)",
+      "Sewer (Public Sewer)",
+      "Hot Water (Electric)",
+      "Trash pickup",
+      "Lawn care/Snow removal",
+      "Pest control"
+    ],
+    "amenities": [],
+    "pet_policy": "Pets Allowed",
+    "age_restriction": "No Age Restrictions",
+    "renters_insurance": false,
+    "raw_description": "The Vera is a high rise building with spacious Studio, 1-2 and 3 bedroom floorplans. This property offers stunning views, a private courtyard and playground, bicycle storage, resident services, large community space and on-site laundry. Limited on-site parking is based on availability. Income restrictions apply. Waitlist applications are available at theveraportland.com"
+  }
+}

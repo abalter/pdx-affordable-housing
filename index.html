@@ -689,33 +689,74 @@ header h1{font-family:'Lora',serif;font-size:1.05rem;font-weight:700;white-space
 .search-icon{position:absolute;left:9px;top:50%;transform:translateY(-50%);opacity:.7;pointer-events:none}
 .count-badge{background:rgba(255,255,255,.15);border-radius:20px;padding:4px 12px;font-size:.8rem;white-space:nowrap}
 
-.pills-bar{background:#24506e;padding:7px 14px;display:flex;gap:8px;align-items:center;flex-shrink:0;flex-wrap:wrap}
-.pill{padding:4px 13px;border-radius:20px;font-size:.79rem;font-weight:600;cursor:pointer;border:2px solid transparent;transition:all .15s;user-select:none}
-.pill.hud{background:var(--hud-lt);color:var(--hud)} .pill.active.hud{background:var(--hud);color:#fff}
-.pill.pbv{background:var(--pbv-lt);color:var(--pbv)} .pill.active.pbv{background:var(--pbv);color:#fff}
-.pill.tc {background:var(--tc-lt); color:var(--tc) } .pill.active.tc {background:var(--tc); color:#fff}
-.pill:hover{opacity:.85}
-.pills-sep{width:1px;height:20px;background:rgba(255,255,255,.2);margin:0 2px}
-.view-toggle{margin-left:auto;display:flex;gap:4px}
+/* ── Filter bar ─────────────────────────────────────── */
+.filter-bar{background:#24506e;padding:6px 14px;display:flex;gap:6px;align-items:center;flex-shrink:0;flex-wrap:wrap;position:relative;z-index:900}
+.filter-bar .view-toggle{margin-left:auto;display:flex;gap:4px}
 .view-btn{background:rgba(255,255,255,.12);border:none;color:#fff;padding:5px 11px;border-radius:6px;cursor:pointer;font-size:.79rem;font-family:inherit;font-weight:500;transition:background .15s}
 .view-btn.active{background:rgba(255,255,255,.35)}
-.main{display:flex;flex:1;overflow:hidden}
-.sidebar{width:360px;flex-shrink:0;display:flex;flex-direction:column;background:var(--surface);border-right:1px solid var(--border);overflow:hidden}
-.filters{padding:10px 12px;border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:8px;background:#fcfaf7}
-.filter-row{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap}
-.filter-label{font-size:.71rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;min-width:52px;padding-top:3px}
-select.fsel{flex:1;padding:5px 8px;border-radius:6px;border:1px solid var(--border);font-size:.79rem;font-family:inherit;background:#fff;color:var(--text);outline:none;cursor:pointer;min-width:0}
-.cbgroup{display:flex;gap:8px;flex-wrap:wrap}
-.cbgroup label{display:flex;align-items:center;gap:4px;font-size:.77rem;color:var(--text);cursor:pointer;white-space:nowrap}
+
+/* dropdown trigger buttons */
+.fb{position:relative}
+.fb-btn{display:inline-flex;align-items:center;gap:5px;padding:6px 14px;border-radius:20px;border:1.5px solid rgba(255,255,255,.25);background:transparent;color:#fff;font-size:.8rem;font-family:inherit;font-weight:500;cursor:pointer;transition:all .15s;white-space:nowrap}
+.fb-btn:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4)}
+.fb-btn.has-value{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.5)}
+.fb-btn .arrow{font-size:.55rem;opacity:.7;transition:transform .15s}
+.fb.open .fb-btn{background:rgba(255,255,255,.22);border-color:#fff}
+.fb.open .arrow{transform:rotate(180deg)}
+
+/* dropdown panel */
+.fb-panel{display:none;position:absolute;top:calc(100% + 6px);left:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:0 8px 30px rgba(0,0,0,.18);padding:16px;min-width:260px;z-index:950}
+.fb.open .fb-panel{display:block}
+.fb-panel h4{font-size:.75rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px}
+.fb-panel-actions{display:flex;justify-content:space-between;align-items:center;margin-top:14px;padding-top:10px;border-top:1px solid var(--border)}
+.fb-clear{background:none;border:none;color:var(--muted);font-size:.78rem;cursor:pointer;font-family:inherit;padding:4px 0}
+.fb-clear:hover{color:var(--text)}
+.fb-apply{background:var(--accent);color:#fff;border:none;padding:6px 16px;border-radius:6px;font-size:.8rem;font-family:inherit;font-weight:600;cursor:pointer}
+.fb-apply:hover{opacity:.9}
+
+/* pill selectors inside panels */
+.pill-group{display:flex;flex-wrap:wrap;gap:6px}
+.pill-opt{padding:5px 14px;border-radius:20px;font-size:.8rem;font-weight:500;cursor:pointer;border:1.5px solid var(--border);background:var(--surface);color:var(--text);transition:all .12s;user-select:none}
+.pill-opt:hover{border-color:#aaa}
+.pill-opt.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pill-opt.hud.active{background:var(--hud);border-color:var(--hud)}
+.pill-opt.pbv.active{background:var(--pbv);border-color:var(--pbv)}
+.pill-opt.tc.active{background:var(--tc);border-color:var(--tc)}
+
+/* region chips */
 .region-grid{display:flex;flex-wrap:wrap;gap:5px}
-.rchip{display:inline-flex;align-items:center;padding:3px 8px;border-radius:12px;border:1px solid var(--border);font-size:.73rem;cursor:pointer;user-select:none;background:#fff;transition:all .12s;white-space:nowrap}
+.rchip{display:inline-flex;align-items:center;padding:4px 10px;border-radius:14px;border:1px solid var(--border);font-size:.77rem;cursor:pointer;user-select:none;background:#fff;transition:all .12s;white-space:nowrap}
 .rchip:hover{border-color:#aaa}
 .rchip.active{background:#1c3d5a;color:#fff;border-color:#1c3d5a}
-.rent-wrap{flex:1;display:flex;flex-direction:column;gap:4px}
+
+/* rent slider */
+.rent-wrap{display:flex;flex-direction:column;gap:6px}
 .rent-header{display:flex;justify-content:space-between;align-items:center}
-.rent-val{font-size:.79rem;font-weight:600;color:var(--accent)}
+.rent-val{font-size:.85rem;font-weight:600;color:var(--accent)}
 .rent-note{font-size:.69rem;color:var(--muted)}
 input[type=range]{width:100%;accent-color:var(--accent);cursor:pointer;height:4px}
+
+/* checkbox group in panels */
+.cb-group{display:flex;flex-direction:column;gap:8px}
+.cb-group label{display:flex;align-items:center;gap:6px;font-size:.82rem;color:var(--text);cursor:pointer}
+.cb-group label input{accent-color:var(--accent)}
+
+/* age select */
+.panel-select{width:100%;padding:7px 10px;border-radius:6px;border:1px solid var(--border);font-size:.82rem;font-family:inherit;background:#fff;color:var(--text);outline:none;cursor:pointer}
+
+/* active filter tags shown in bar */
+.active-filters{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+.af-tag{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:14px;background:rgba(255,255,255,.15);color:#fff;font-size:.74rem;font-weight:500}
+.af-tag button{background:none;border:none;color:rgba(255,255,255,.6);font-size:.82rem;cursor:pointer;padding:0;line-height:1}
+.af-tag button:hover{color:#fff}
+
+/* overlay to close dropdowns */
+.fb-overlay{display:none;position:fixed;inset:0;z-index:899}
+.fb-overlay.show{display:block}
+
+/* ── Layout ─────────────────────────────────────────── */
+.main{display:flex;flex:1;overflow:hidden}
+.sidebar{width:360px;flex-shrink:0;display:flex;flex-direction:column;background:var(--surface);border-right:1px solid var(--border);overflow:hidden}
 .list-scroll{flex:1;overflow-y:auto;padding:8px}
 .list-scroll::-webkit-scrollbar{width:4px}
 .list-scroll::-webkit-scrollbar-thumb{background:#ccc;border-radius:3px}
@@ -770,11 +811,107 @@ input[type=range]{width:100%;accent-color:var(--accent);cursor:pointer;height:4p
 
 </header>
 
-<div class="pills-bar">
-  <span class="pill hud active" data-prog="HUD">HUD Subsidized</span>
-  <span class="pill pbv active" data-prog="PBV">Project-Based Voucher</span>
-  <span class="pill tc  active" data-prog="Tax Credit">Tax Credit</span>
-  <div class="pills-sep"></div>
+<div class="fb-overlay" id="fb-overlay"></div>
+<div class="filter-bar" id="filter-bar">
+
+  <!-- Price -->
+  <div class="fb" data-filter="price">
+    <button class="fb-btn" id="btn-price">💲 Price <span class="arrow">▼</span></button>
+    <div class="fb-panel" style="min-width:300px">
+      <h4>Max Rent</h4>
+      <div class="rent-wrap">
+        <div class="rent-header">
+          <span id="rent-display" class="rent-val">No limit</span>
+          <span class="rent-note">Tax Credit only · income-based excluded</span>
+        </div>
+        <input type="range" id="rent-slider" min="400" max="1900" step="50" value="1900">
+        <div style="display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted)">
+          <span>$400</span><span>$1,900+</span>
+        </div>
+      </div>
+      <div class="fb-panel-actions">
+        <button class="fb-clear" data-clear="price">Reset</button>
+        <button class="fb-apply" data-close="price">Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Beds -->
+  <div class="fb" data-filter="beds">
+    <button class="fb-btn" id="btn-beds">🛏 Beds <span class="arrow">▼</span></button>
+    <div class="fb-panel">
+      <h4>Unit Type</h4>
+      <div class="pill-group" id="bed-pills">
+        <span class="pill-opt active" data-bed="">Any</span>
+        <span class="pill-opt" data-bed="sro">SRO</span>
+        <span class="pill-opt" data-bed="studio">Studio</span>
+        <span class="pill-opt" data-bed="br1">1 BR</span>
+        <span class="pill-opt" data-bed="br2">2 BR</span>
+        <span class="pill-opt" data-bed="br3">3 BR</span>
+      </div>
+      <div class="fb-panel-actions">
+        <button class="fb-clear" data-clear="beds">Reset</button>
+        <button class="fb-apply" data-close="beds">Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Program -->
+  <div class="fb" data-filter="program">
+    <button class="fb-btn" id="btn-program">📋 Program <span class="arrow">▼</span></button>
+    <div class="fb-panel">
+      <h4>Housing Program</h4>
+      <div class="pill-group" id="prog-pills">
+        <span class="pill-opt hud active" data-prog="HUD">HUD Subsidized</span>
+        <span class="pill-opt pbv active" data-prog="PBV">Project-Based Voucher</span>
+        <span class="pill-opt tc active" data-prog="Tax Credit">Tax Credit</span>
+      </div>
+      <div class="fb-panel-actions">
+        <button class="fb-clear" data-clear="program">Reset</button>
+        <button class="fb-apply" data-close="program">Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Region -->
+  <div class="fb" data-filter="region">
+    <button class="fb-btn" id="btn-region">📍 Region <span class="arrow">▼</span></button>
+    <div class="fb-panel" style="min-width:320px">
+      <h4>Neighborhood / Region</h4>
+      <div class="region-grid" id="region-grid"></div>
+      <div class="fb-panel-actions">
+        <button class="fb-clear" data-clear="region">Reset</button>
+        <button class="fb-apply" data-close="region">Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- More Filters -->
+  <div class="fb" data-filter="more">
+    <button class="fb-btn" id="btn-more">⚙ More <span class="arrow">▼</span></button>
+    <div class="fb-panel" style="min-width:280px">
+      <h4>Age Requirement</h4>
+      <select class="panel-select" id="f-age">
+        <option value="">Any age</option>
+        <option value="0">No minimum age</option>
+        <option value="55">55+</option>
+        <option value="62">62+</option>
+      </select>
+      <h4 style="margin-top:14px">Special Features</h4>
+      <div class="cb-group">
+        <label><input type="checkbox" id="f-ada"> ADA accessible units</label>
+        <label><input type="checkbox" id="f-sober"> Sober living only</label>
+        <label><input type="checkbox" id="f-vets"> Veterans preference</label>
+      </div>
+      <div class="fb-panel-actions">
+        <button class="fb-clear" data-clear="more">Reset</button>
+        <button class="fb-apply" data-close="more">Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-filters" id="active-filters"></div>
+
   <div class="view-toggle">
     <button class="view-btn active" id="btn-split">⬛ Split</button>
     <button class="view-btn" id="btn-list">☰ List</button>
@@ -784,50 +921,6 @@ input[type=range]{width:100%;accent-color:var(--accent);cursor:pointer;height:4p
 
 <div class="main">
   <div class="sidebar" id="sidebar">
-    <div class="filters">
-      <div class="filter-row">
-        <span class="filter-label">Region</span>
-        <div class="region-grid" id="region-grid"></div>
-      </div>
-      <div class="filter-row">
-        <span class="filter-label">Age</span>
-        <select class="fsel" id="f-age">
-          <option value="">Any age</option>
-          <option value="0">No min. age</option>
-          <option value="55">55+</option>
-          <option value="62">62+</option>
-        </select>
-        <span class="filter-label" style="min-width:40px">Units</span>
-        <div class="cbgroup">
-          <label><input type="checkbox" class="uf" value="sro"> SRO</label>
-          <label><input type="checkbox" class="uf" value="studio"> Studio</label>
-          <label><input type="checkbox" class="uf" value="br1"> 1 BR</label>
-          <label><input type="checkbox" class="uf" value="br2"> 2 BR</label>
-          <label><input type="checkbox" class="uf" value="br3"> 3 BR</label>
-        </div>
-      </div>
-      <div class="filter-row">
-        <span class="filter-label">Max<br>Rent</span>
-        <div class="rent-wrap">
-          <div class="rent-header">
-            <span id="rent-display" class="rent-val">No limit</span>
-            <span class="rent-note">Tax Credit only · income-based excluded</span>
-          </div>
-          <input type="range" id="rent-slider" min="400" max="1900" step="50" value="1900">
-          <div style="display:flex;justify-content:space-between;font-size:.68rem;color:var(--muted)">
-            <span>$400</span><span>$1,900+</span>
-          </div>
-        </div>
-      </div>
-      <div class="filter-row">
-        <span class="filter-label">Other</span>
-        <div class="cbgroup">
-          <label><input type="checkbox" id="f-ada"> ADA units</label>
-          <label><input type="checkbox" id="f-sober"> Sober only</label>
-          <label><input type="checkbox" id="f-vets"> Veterans pref.</label>
-        </div>
-      </div>
-    </div>
     <div class="list-scroll" id="list"></div>
   </div>
   <div id="map"></div>
@@ -923,7 +1016,7 @@ for (const r of regions) {
   chip.addEventListener('click',()=>{
     if(state.activeRegions.has(r)){state.activeRegions.delete(r);chip.classList.remove('active');}
     else{state.activeRegions.add(r);chip.classList.add('active');}
-    render();
+    render(); updateFilterBtnLabels();
   });
   grid.appendChild(chip);
 }
@@ -934,7 +1027,7 @@ const rentDisp=document.getElementById('rent-display');
 slider.addEventListener('input',()=>{
   state.maxRent=parseInt(slider.value);
   rentDisp.textContent=state.maxRent>=MAX_RENT_CEIL?'No limit':'$'+state.maxRent.toLocaleString();
-  render();
+  render(); updateFilterBtnLabels();
 });
 
 // ── Filtering ─────────────────────────────────────────────
@@ -1057,26 +1150,184 @@ function setView(v) {
   setTimeout(()=>map.invalidateSize(),60);
 }
 
-// ── Events ────────────────────────────────────────────────
-document.getElementById('search').addEventListener('input',e=>{state.search=e.target.value.trim();render();});
-document.getElementById('f-age').addEventListener('change',e=>{state.age=e.target.value;render();});
-document.querySelectorAll('.uf').forEach(cb=>cb.addEventListener('change',()=>{
-  state.units=new Set([...document.querySelectorAll('.uf:checked')].map(c=>c.value));render();
-}));
-document.getElementById('f-ada').addEventListener('change',e=>{state.ada=e.target.checked;render();});
-document.getElementById('f-sober').addEventListener('change',e=>{state.sober=e.target.checked;render();});
-document.getElementById('f-vets').addEventListener('change',e=>{state.vets=e.target.checked;render();});
-document.querySelectorAll('.pill').forEach(pill=>pill.addEventListener('click',()=>{
-  const pg=pill.dataset.prog;
-  if(state.activePrograms.has(pg))state.activePrograms.delete(pg);else state.activePrograms.add(pg);
-  pill.classList.toggle('active');render();
-}));
-document.getElementById('btn-split').addEventListener('click',()=>setView('split'));
-document.getElementById('btn-list').addEventListener('click', ()=>setView('list'));
-document.getElementById('btn-map').addEventListener('click',  ()=>setView('map'));
+// ── Dropdown filter bar logic ─────────────────────────────
+const overlay = document.getElementById('fb-overlay');
+
+function openFilter(name) {
+  closeAllFilters();
+  const fb = document.querySelector(`.fb[data-filter="${name}"]`);
+  if (fb) { fb.classList.add('open'); overlay.classList.add('show'); }
+}
+function closeAllFilters() {
+  document.querySelectorAll('.fb').forEach(f => f.classList.remove('open'));
+  overlay.classList.remove('show');
+}
+overlay.addEventListener('click', closeAllFilters);
+
+// Toggle dropdowns on button click
+document.querySelectorAll('.fb-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const fb = btn.closest('.fb');
+    const name = fb.dataset.filter;
+    if (fb.classList.contains('open')) closeAllFilters();
+    else openFilter(name);
+  });
+});
+
+// Prevent panel clicks from closing
+document.querySelectorAll('.fb-panel').forEach(p => p.addEventListener('click', e => e.stopPropagation()));
+
+// Apply buttons close panel
+document.querySelectorAll('.fb-apply').forEach(btn => btn.addEventListener('click', () => closeAllFilters()));
+
+// Clear/Reset buttons
+document.querySelectorAll('.fb-clear').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const which = btn.dataset.clear;
+    if (which === 'price') { slider.value = MAX_RENT_CEIL; state.maxRent = MAX_RENT_CEIL; rentDisp.textContent = 'No limit'; }
+    if (which === 'beds') { state.units.clear(); document.querySelectorAll('#bed-pills .pill-opt').forEach(p => { p.classList.toggle('active', p.dataset.bed === ''); }); }
+    if (which === 'program') { state.activePrograms = new Set(['HUD','PBV','Tax Credit']); document.querySelectorAll('#prog-pills .pill-opt').forEach(p => p.classList.add('active')); }
+    if (which === 'region') { state.activeRegions.clear(); document.querySelectorAll('.rchip').forEach(c => c.classList.remove('active')); }
+    if (which === 'more') { document.getElementById('f-age').value = ''; state.age = ''; document.getElementById('f-ada').checked = false; state.ada = false; document.getElementById('f-sober').checked = false; state.sober = false; document.getElementById('f-vets').checked = false; state.vets = false; }
+    render(); updateFilterBtnLabels();
+  });
+});
+
+// Bed pills (multi-select, "Any" deselects all)
+document.querySelectorAll('#bed-pills .pill-opt').forEach(pill => {
+  pill.addEventListener('click', () => {
+    const val = pill.dataset.bed;
+    if (val === '') {
+      // "Any" clicked — clear selection
+      state.units.clear();
+      document.querySelectorAll('#bed-pills .pill-opt').forEach(p => p.classList.toggle('active', p.dataset.bed === ''));
+    } else {
+      // Toggle specific bed type
+      document.querySelector('#bed-pills .pill-opt[data-bed=""]').classList.remove('active');
+      if (state.units.has(val)) { state.units.delete(val); pill.classList.remove('active'); }
+      else { state.units.add(val); pill.classList.add('active'); }
+      // If nothing selected, re-activate "Any"
+      if (state.units.size === 0) document.querySelector('#bed-pills .pill-opt[data-bed=""]').classList.add('active');
+    }
+    render(); updateFilterBtnLabels();
+  });
+});
+
+// Program pills (toggle each)
+document.querySelectorAll('#prog-pills .pill-opt').forEach(pill => {
+  pill.addEventListener('click', () => {
+    const pg = pill.dataset.prog;
+    if (state.activePrograms.has(pg)) state.activePrograms.delete(pg);
+    else state.activePrograms.add(pg);
+    pill.classList.toggle('active');
+    render(); updateFilterBtnLabels();
+  });
+});
+
+// Other filter inputs
+document.getElementById('search').addEventListener('input', e => { state.search = e.target.value.trim(); render(); });
+document.getElementById('f-age').addEventListener('change', e => { state.age = e.target.value; render(); updateFilterBtnLabels(); });
+document.getElementById('f-ada').addEventListener('change', e => { state.ada = e.target.checked; render(); updateFilterBtnLabels(); });
+document.getElementById('f-sober').addEventListener('change', e => { state.sober = e.target.checked; render(); updateFilterBtnLabels(); });
+document.getElementById('f-vets').addEventListener('change', e => { state.vets = e.target.checked; render(); updateFilterBtnLabels(); });
+
+// View toggle
+document.getElementById('btn-split').addEventListener('click', () => setView('split'));
+document.getElementById('btn-list').addEventListener('click', () => setView('list'));
+document.getElementById('btn-map').addEventListener('click', () => setView('map'));
+
+// ── Update button labels to reflect active filters ────────
+function updateFilterBtnLabels() {
+  // Price button
+  const priceBtn = document.getElementById('btn-price');
+  if (state.maxRent < MAX_RENT_CEIL) {
+    priceBtn.innerHTML = `💲 ≤$${state.maxRent.toLocaleString()} <span class="arrow">▼</span>`;
+    priceBtn.classList.add('has-value');
+  } else {
+    priceBtn.innerHTML = '💲 Price <span class="arrow">▼</span>';
+    priceBtn.classList.remove('has-value');
+  }
+
+  // Beds button
+  const bedsBtn = document.getElementById('btn-beds');
+  if (state.units.size > 0) {
+    const labels = { sro: 'SRO', studio: 'Studio', br1: '1BR', br2: '2BR', br3: '3BR' };
+    bedsBtn.innerHTML = `🛏 ${[...state.units].map(u => labels[u]).join(', ')} <span class="arrow">▼</span>`;
+    bedsBtn.classList.add('has-value');
+  } else {
+    bedsBtn.innerHTML = '🛏 Beds <span class="arrow">▼</span>';
+    bedsBtn.classList.remove('has-value');
+  }
+
+  // Program button
+  const progBtn = document.getElementById('btn-program');
+  if (state.activePrograms.size < 3) {
+    progBtn.innerHTML = `📋 ${state.activePrograms.size} Program${state.activePrograms.size !== 1 ? 's' : ''} <span class="arrow">▼</span>`;
+    progBtn.classList.add('has-value');
+  } else {
+    progBtn.innerHTML = '📋 Program <span class="arrow">▼</span>';
+    progBtn.classList.remove('has-value');
+  }
+
+  // Region button
+  const regBtn = document.getElementById('btn-region');
+  if (state.activeRegions.size > 0) {
+    const label = state.activeRegions.size <= 2 ? [...state.activeRegions].join(', ') : `${state.activeRegions.size} regions`;
+    regBtn.innerHTML = `📍 ${label} <span class="arrow">▼</span>`;
+    regBtn.classList.add('has-value');
+  } else {
+    regBtn.innerHTML = '📍 Region <span class="arrow">▼</span>';
+    regBtn.classList.remove('has-value');
+  }
+
+  // More button
+  const moreBtn = document.getElementById('btn-more');
+  const moreCount = (state.age !== '' ? 1 : 0) + (state.ada ? 1 : 0) + (state.sober ? 1 : 0) + (state.vets ? 1 : 0);
+  if (moreCount > 0) {
+    moreBtn.innerHTML = `⚙ More (${moreCount}) <span class="arrow">▼</span>`;
+    moreBtn.classList.add('has-value');
+  } else {
+    moreBtn.innerHTML = '⚙ More <span class="arrow">▼</span>';
+    moreBtn.classList.remove('has-value');
+  }
+
+  // Active filter tags
+  const tagsEl = document.getElementById('active-filters');
+  let tags = '';
+  if (state.maxRent < MAX_RENT_CEIL) tags += afTag('≤$' + state.maxRent.toLocaleString(), 'price');
+  for (const u of state.units) { const l = { sro:'SRO', studio:'Studio', br1:'1BR', br2:'2BR', br3:'3BR' }; tags += afTag(l[u], 'bed-' + u); }
+  if (state.activePrograms.size < 3) for (const pg of state.activePrograms) tags += afTag(pg, 'prog-' + pg);
+  for (const r of state.activeRegions) tags += afTag(r, 'reg-' + r);
+  if (state.age !== '') tags += afTag('Age ' + (state.age === '0' ? 'no min' : state.age + '+'), 'age');
+  if (state.ada) tags += afTag('ADA', 'ada');
+  if (state.sober) tags += afTag('Sober', 'sober');
+  if (state.vets) tags += afTag('Veterans', 'vets');
+  tagsEl.innerHTML = tags;
+
+  // Wire up remove buttons on tags
+  tagsEl.querySelectorAll('button[data-remove]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.remove;
+      if (key === 'price') { slider.value = MAX_RENT_CEIL; state.maxRent = MAX_RENT_CEIL; rentDisp.textContent = 'No limit'; }
+      else if (key.startsWith('bed-')) { const u = key.slice(4); state.units.delete(u); document.querySelector(`#bed-pills .pill-opt[data-bed="${u}"]`).classList.remove('active'); if (state.units.size === 0) document.querySelector('#bed-pills .pill-opt[data-bed=""]').classList.add('active'); }
+      else if (key.startsWith('prog-')) { const pg = key.slice(5); state.activePrograms.delete(pg); document.querySelector(`#prog-pills .pill-opt[data-prog="${pg}"]`).classList.remove('active'); }
+      else if (key.startsWith('reg-')) { const r = key.slice(4); state.activeRegions.delete(r); document.querySelector(`.rchip[data-region="${r}"]`).classList.remove('active'); }
+      else if (key === 'age') { document.getElementById('f-age').value = ''; state.age = ''; }
+      else if (key === 'ada') { document.getElementById('f-ada').checked = false; state.ada = false; }
+      else if (key === 'sober') { document.getElementById('f-sober').checked = false; state.sober = false; }
+      else if (key === 'vets') { document.getElementById('f-vets').checked = false; state.vets = false; }
+      render(); updateFilterBtnLabels();
+    });
+  });
+}
+function afTag(label, key) {
+  return `<span class="af-tag">${label}<button data-remove="${key}">&times;</button></span>`;
+}
 
 // ── Init ──────────────────────────────────────────────────
 render();
+updateFilterBtnLabels();
 </script>
 </body>
 </html>
